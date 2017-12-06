@@ -1,0 +1,17 @@
+{
+  "name": "adapt-contrib-plainMenu",
+  "version": "1.0.0",
+  "framework": ">=2.1",
+  "homepage": "https://github.com/theodi/adapt-contrib-plainmenu",
+  "issues": "https://github.com/theodi/adapt-contrib-plainmenu/issues",
+  "displayName": "Plain menu",
+  "menu": "plainmenu",
+  "description": "A sequential menu with one page per block",
+  "main": "js/adapt-contrib-plainmenu.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-menu"
+  ],
+  "license": "GPLv3",
+  "targetAttribute": "_plainmenu"
+}
