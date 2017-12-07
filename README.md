@@ -1,1 +1,1 @@
-# adapt-contrib-plainmenu
+# adapt-contrib-blockmenu

@@ -3,7 +3,7 @@ define([
     'coreViews/menuView'
 ], function(Adapt, MenuView) {
 
-    var PlainMenuView = MenuView.extend({
+    var BlockMenuView = MenuView.extend({
 
         postRender: function() {
             var nthChild = 0;
@@ -11,16 +11,16 @@ define([
                 if (item.get('_isAvailable')) {
                     nthChild++;
                     item.set("_nthChild", nthChild);
-                    this.$('.menu-container-inner').append(new PlainMenuItemView({model: item}).$el);
+                    this.$('.menu-container-inner').append(new BlockMenuItemView({model: item}).$el);
                 }
             });
         }
 
     }, {
-        template: 'plainmenu'
+        template: 'blockmenu'
     });
 
-    var PlainMenuItemView = MenuView.extend({
+    var BlockMenuItemView = MenuView.extend({
 
         events: {
             'click button' : 'onClickMenuItemButton'
@@ -63,12 +63,12 @@ define([
         }
 
     }, {
-        template: 'plainmenu-item'
+        template: 'blockmenu-item'
     });
 
     Adapt.on('router:menu', function(model) {
 
-        $('#wrapper').append(new PlainMenuView({model: model}).$el);
+        $('#wrapper').append(new BlockMenuView({model: model}).$el);
 
     });
 
