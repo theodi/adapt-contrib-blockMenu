@@ -299,7 +299,8 @@ html {
 	.page-level-progress-menu-item-indicator {
 		width: 60px;
 		height: 6px;
-		background-color: @menu-item-progress-color;
+		background-color: @black;
+		// background-color: @menu-item-progress-color;
 		border: 2px solid @menu-item-progress-border-color;
 		border-radius: 25px;
 		bottom: 15px;
@@ -307,7 +308,8 @@ html {
 
 	.page-level-progress-menu-item-indicator-bar {
 		height: 6px;
-		background-color: @menu-item-progress-fill-color;
+		background-color: @white;
+		// background-color: @menu-item-progress-fill-color;
 		border-radius: 25px;
 	}
 
@@ -323,22 +325,20 @@ html {
 	}
 
 	.menu-item-button {
-		background-color:darken(@menu-button-color, 20%);
+		background-color:darken(@black, 20%);
 		color:@button-text-color;
 		
 		&:hover {
-			background-color:darken(@menu-button-color, 30%);
+			background-color:darken(@black, 30%);
 			color:@button-text-color-hover;
 		}
 		
 		&.visited {
-			background-color:darken(@menu-button-color, 20%);
+			background-color:darken(@black, 20%);
 			color:@button-text-color-disabled;
 		}
 	}
 }
-
-// MEDIA
 
 .menu-item-graphic {
 	margin-top: 20px;
@@ -360,6 +360,10 @@ html {
 		.menu-item-text {
 			margin-left: 50%;
 		}
+	}
+
+	.menu-item-button {
+		width: 150px;
 	}
 }
 
