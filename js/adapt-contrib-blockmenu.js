@@ -19,9 +19,6 @@ define([
                 text = Adapt.course.get('_globals')._extensions._aboutPage.contactLinkText;
                 if (!email) { email = Adapt.course.get('_globals')._theme._ukraine.contactEMail; }
                 if (!text) { text = Adapt.course.get('_globals')._theme._ukraine.contactLinkText; }
-                if( $('.about-links').size() > 0) {
-                    $('.about-links').append(' | ');
-                } 
                 $('.about-links').append('<a class="contact" href="mailto:'+email+'">'+text+'</a>');
             } catch (err) {}
         }
