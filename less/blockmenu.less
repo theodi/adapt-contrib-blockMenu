@@ -149,6 +149,15 @@ html {
 		// box-decoration-break: clone;
 	}
 	.menu-item {
+		&.ticks ul li {
+    	    list-style-type: none;
+	        margin-left: 28px;
+        	white-space: pre-wrap;
+        	&:before {
+            	content: "✔";
+            	margin: 0 14px 0 -28px;
+    		}
+		}
 		.menu-item-inner-block {
 			background-color: @white;
 			color: @black;
