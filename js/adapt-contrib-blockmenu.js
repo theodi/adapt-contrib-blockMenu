@@ -23,7 +23,7 @@ define([
     var BlockMenuItemView = MenuView.extend({
 
         events: {
-            'click button' : 'onClickMenuItemButton'
+            'click button' : 'onClickMenuItemButton',
         },
 
         className: function() {

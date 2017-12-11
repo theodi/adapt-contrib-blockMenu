@@ -1,7 +1,7 @@
 {
   "name": "adapt-contrib-blockMenu",
   "version": "1.0.0",
-  "framework": ">=2.1",
+  "framework": ">=2.0",
   "homepage": "https://github.com/theodi/adapt-contrib-blockmenu",
   "issues": "https://github.com/theodi/adapt-contrib-blockmenu/issues",
   "displayName": "Block menu",
