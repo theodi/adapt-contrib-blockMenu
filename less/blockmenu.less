@@ -143,10 +143,23 @@ html {
         padding-bottom: 10px;
 		padding-left: 10px;
 		padding-right: 10px;
+		display: inline-block;
+		@media all and (min-width: @device-width-medium) {
+    		width: 50%;
+    		float: left;
+    	}
 		// -webkit-box-decoration-break: clone;
 		// -ms-box-decoration-break: clone;
 		// -o-box-decoration-break: clone;
 		// box-decoration-break: clone;
+	}
+	.menu-body-inner .video {
+    	@media all and (min-width: @device-width-medium) {
+    		top: -100px;
+    		display: inline-block;
+    		width: 50%;
+    		position: relative;
+    	}
 	}
 	.menu-item {
 		&.ticks ul li {
